@@ -1,1 +1,36 @@
+@use "./partials/header" as *;
+
+
 @import "~bootstrap/scss/bootstrap.scss";
+@import "~@fortawesome/fontawesome-free/css/all";
+
+
+
+
+:root{
+    --orange:#FF6900;
+    --green:#008000;
+    --balck: #000000;
+    --red: #FF0000;
+    --black-footer: #1A1A1A;
+}
+/* RESET */
+
+img{
+    max-width: 100%;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    color: unset;
+    text-decoration: none;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
