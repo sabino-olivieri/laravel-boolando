@@ -1,5 +1,6 @@
 @use "./partials/header" as *;
 @use "./partials/card" as *;
+@use "./partials/footer" as *;
 
 
 @import "~bootstrap/scss/bootstrap.scss";
@@ -23,6 +24,7 @@ img{
 
 ul{
     list-style: none;
+    padding-left: 0;
 }
 
 a{

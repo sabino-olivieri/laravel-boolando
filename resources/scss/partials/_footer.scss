@@ -1,0 +1,16 @@
+footer {
+    background-color: var(--black-footer);
+    color: white;
+
+    ul {
+        font-size: 0.8rem;
+
+        i {
+            font-size: 1rem;
+
+            &:hover {
+                color: var(--orange);
+            }
+        }
+    }
+}
