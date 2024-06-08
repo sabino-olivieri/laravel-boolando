@@ -1,5 +1,6 @@
 .ms_card {
     position: relative;
+    transition: all 0.5s;
 
     .favorite {
         position: absolute;
@@ -7,7 +8,29 @@
         top: 10px;
         cursor: pointer;
         z-index: 10;
+        
     }
+
+    .back-img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        opacity: 0;
+        transition: all 0.5s;
+    }
+
+    &:hover .back-img {
+        z-index: 1;
+        opacity: 1;
+    }
+
+    &:hover {
+        transform: scale(102%);
+        box-shadow: 5px 5px 0px var(--orange),
+                    -5px -5px 0px var(--orange);
+    }
+
 
     .color-red {
         color: red;

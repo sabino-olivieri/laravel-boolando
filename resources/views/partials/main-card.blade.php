@@ -13,8 +13,9 @@
                                 <img src="{{ Vite::asset('resources/img/' . $prod['frontImage']) }}" alt="">
                             </div>
 
-                            <div class="back-img">
-                                
+                            <div class="back-img hidden">
+                                <img src="{{ Vite::asset('resources/img/' . $prod['backImage']) }}" alt="">
+
                             </div>
 
                             <div class="badges d-flex gap-1">
