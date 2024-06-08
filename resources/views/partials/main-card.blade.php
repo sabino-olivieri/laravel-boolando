@@ -26,7 +26,7 @@
                                 @for ($i = count($prod['badges']) - 1; $i >= 0; $i--)
                                     @if ($prod['badges'][$i]['type'] === 'discount')
                                         @php
-                                            $discount = -(int) $prod['badges'][$i]['type'];
+                                            $discount = -(int) $prod['badges'][$i]['value'];
                                         @endphp
                                         <span class="discount py-1 px-3">
                                             {{ $prod['badges'][$i]['value'] }}
