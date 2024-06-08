@@ -1,0 +1,53 @@
+.ms_card {
+    position: relative;
+
+    .favorite {
+        position: absolute;
+        right: 0;
+        top: 10px;
+        cursor: pointer;
+        z-index: 10;
+    }
+
+    .color-red {
+        color: red;
+    }
+
+    .info-product {
+        h5 {
+            font-weight: 700;
+        }
+
+        .price {
+            color: var(--red);
+            font-weight: 700;
+        }
+
+        .original-price {
+            text-decoration: line-through;
+        }
+    }
+
+    .product-img {
+        position: relative;
+        
+            .badges {
+                position: absolute;
+                left: 0;
+                bottom: 8%;
+                color: white;
+                font-weight: 700;
+                width: 100%;
+                z-index: 10;
+
+                .discount {
+                    background-color: var(--red);
+
+                }
+
+                .tag {                  
+                    background-color: var(--green)
+                }
+            }
+    }
+}

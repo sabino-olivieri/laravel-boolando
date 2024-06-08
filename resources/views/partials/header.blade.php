@@ -6,10 +6,10 @@
 
                 <div class="col-3 d-flex align-items-center">
                     <nav>
-                        <ul class="d-flex gap-3 m-0">
-                            <li><a href="">Donna</a></li>
-                            <li><a href="">Uomo</a></li>
-                            <li><a href="">Bambini</a></li>
+                        <ul class="d-flex gap-1 m-0">
+                            <li><a href="" class="p-3">Donna</a></li>
+                            <li><a href="" class="p-3">Uomo</a></li>
+                            <li><a href="" class="p-3">Bambini</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -22,10 +22,10 @@
 
                 <div class="col-3 d-flex align-items-center justify-content-end">
                     <nav>
-                        <ul class="d-flex gap-3 m-0">
-                            <li><i class="fa-regular fa-user"></i></li>
-                            <li><i class="fa-regular fa-heart"></i></li>
-                            <li><i class="fa-solid fa-bag-shopping"></i></li>
+                        <ul class="d-flex gap-1 m-0">
+                            <li><i class="fa-regular fa-user p-3"></i></li>
+                            <li><i class="fa-regular fa-heart p-3"></i></li>
+                            <li><i class="fa-solid fa-bag-shopping p-3"></i></li>
                         </ul>
                     </nav>
                 </div>
