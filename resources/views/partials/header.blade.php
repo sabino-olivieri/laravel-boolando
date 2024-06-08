@@ -7,9 +7,9 @@
                 <div class="col-3 d-flex align-items-center">
                     <nav>
                         <ul class="d-flex gap-1 m-0">
-                            <li><a href="" class="p-3">Donna</a></li>
-                            <li><a href="" class="p-3">Uomo</a></li>
-                            <li><a href="" class="p-3">Bambini</a></li>
+                            <li><a href="{{route("woman")}} " class="p-3">Donna</a></li>
+                            <li><a href="{{route("man")}} " class="p-3">Uomo</a></li>
+                            <li><a href="{{route("children")}} " class="p-3">Bambini</a></li>
                         </ul>
                     </nav>
                 </div>

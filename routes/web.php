@@ -20,3 +20,15 @@ Route::get('/', function () {
     return view("home", compact("data"));
 
 })->name("home");
+
+Route::get('/woman', function () {
+    return view('woman');
+})->name('woman');
+
+Route::get('/man', function () {
+    return view('man');
+})->name('man');
+
+Route::get('/children', function () {
+    return view('children');
+})->name('children');
