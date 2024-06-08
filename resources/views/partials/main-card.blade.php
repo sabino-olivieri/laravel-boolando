@@ -4,7 +4,7 @@
             @foreach ($data as $prod)
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="ms_card m-3">
-                        <div class="favorite p-2 bg-white {{$prod['isInFavorites'] ? 'color-red' : ''}}">
+                        <div class="favorite p-2 bg-white {{ $prod['isInFavorites'] ? 'color-red' : '' }}">
                             <i class="fa-solid fa-heart"></i>
                         </div>
                         <div class="product-img">
@@ -22,23 +22,25 @@
                                 @php
                                     $discount = 0;
                                 @endphp
-                            @foreach ($prod['badges'] as $badge)
-                                    @if ($badge['type'] === 'discount')
+
+                                @for ($i = count($prod['badges']) - 1; $i >= 0; $i--)
+                                    @if ($prod['badges'][$i]['type'] === 'discount')
                                         @php
-                                            $discount = -(int)$badge['value'];
+                                            $discount = -(int) $prod['badges'][$i]['type'];
                                         @endphp
                                         <span class="discount py-1 px-3">
-                                            {{ $badge['value'] }} 
+                                            {{ $prod['badges'][$i]['value'] }}
                                         </span>
                                     @endif
 
-                                    @if ($badge['type'] === 'tag')
+                                    @if ($prod['badges'][$i]['type'] === 'tag')
                                         <span class="tag py-1 px-3">
-                                            {{ $badge['value'] }}
+                                            {{ $prod['badges'][$i]['value'] }}
                                         </span>
                                     @endif
-                                @endforeach
-                                </div>
+                                @endfor
+
+                            </div>
 
                         </div>
 
@@ -52,9 +54,9 @@
 
                             <span class="price">
                                 @if ($discount > 0)
-                                {{ $prod['price'] - round(($prod['price'] * ($discount / 100)),2) }} €
+                                    {{ $prod['price'] - round($prod['price'] * ($discount / 100), 2) }} €
                                 @else
-                                {{ $prod['price'] }} €
+                                    {{ $prod['price'] }} €
                                 @endif
 
                             </span>
